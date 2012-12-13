@@ -1,21 +1,29 @@
 {
-  "name": "colorgrad",
-  "version": "0.1.0",
-  "description": "Quick and easy linear color mappings",
-  "main": "colorgrad.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name" : "colorgrad",
+  "version" : "0.1.0",
+  "description" : "Quick and easy linear color mappings",
+  "main" : "index.js",
+  "directories" : {
+    "lib" : ".",
+    "example" : "example",
+    "test" : "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bpostlethwaite/colorgrad.git"
+  "scripts" : {
+    "test" : "tap test/*.js"
   },
-  "keywords": [
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/bpostlethwaite/colorgrad.git"
+  },
+  "keywords" : [
     "color",
     "luminosity",
     "colorarray"
   ],
-  "author": "Ben Postlethwaite",
-  "license": "MIT",
-  "readmeFilename": "README.md"
+  "author" : {
+    "name" : "Ben Postlethwaite",
+    "email" : "post.ben.here@gmail.com",
+    "url" : "benpostlethwaite.ca"
+  },
+  "license" : "MIT"
 }

@@ -1,8 +1,8 @@
-var cg =  require('./colorgrad')()
+var cg =  require('../')()
 
 var cops = {
   "lum": -1
-, "nshades": 10
+, "nshades": 3
 , "type": "linear"
 }
 
@@ -15,11 +15,11 @@ console.log(c)
 
 
 var ops = {
-  "lum": 10
-, "nshades": 10
+  "lum": -2
+, "nshades": 4
 }
 
-var cga = cg.colorgrad([10,10,10], ops)
+var cga = cg.colorgrad("#808080", ops)
 
 console.log(cga)
 
