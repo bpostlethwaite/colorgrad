@@ -16,11 +16,8 @@ cglwr.pop() // pop off centre duplicate
 var c = cglwr.concat(cgupr)
 console.log(c)
 ```
-
-Right now the only style of progression is linear, though I would like to implement exponential and square root.
-The defaults are `nshades = 100`, `type = linear`, `lum = 1`.
-
 which outputs
+
 ```bash
 [ '#0000ff',
   '#1c1cff',
@@ -43,7 +40,10 @@ which outputs
   '#ff0000' ]
 ```
 
+Right now the only style of progression is linear, though I would like to implement exponential and square root.
+The defaults are `nshades = 100`, `type = linear`, `lum = 1`.
 The `lum` option sets the percentage total luminosity increase. The luminosity step size is lum / number of steps. For rgb input it would look like:
+
 ```javascript
 var ops = {
   "lum": 10
