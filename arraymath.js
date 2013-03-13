@@ -14,7 +14,7 @@ module.exports = function (o) {
    * ARRAYMATH
    */
   return function(a, b) {
-    if(!isArray(a) || !isArray(b))
+    if(!Array.isArray(a) || !Array.isArray(b))
       throw new Error("arraymath inputs must be arrays.")
     var i, out = []
     if(a.length === 1) {
@@ -33,7 +33,7 @@ module.exports = function (o) {
       return out
     }
     else
-      throw new Error("Array lengths must be equal")
+      throw new Error("Vector dimensions must be equal or scalar vector product")
   }
 
   /*
@@ -44,21 +44,12 @@ module.exports = function (o) {
       var op = {
         "*": a * b
       , "+": a + b
-      ,"-": a - b
-      ,"/": a / b
+      , "-": a - b
+      , "/": a / b
       }
       return op[o]
     }
   }
-
-  /*
-   * ISARRAY
-   */
-  function isArray(v) {
-    return Object.prototype.toString.call(v) === "[object Array]";
-  }
-
-
 }
 
 
